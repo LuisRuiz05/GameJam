@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public void PlayGame()
+    public int sceneIndex;
+
+    public void LoadScene(int index)
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(index);
     }
     public void QuitGame()
     {
